@@ -62,7 +62,7 @@ export const Autocomplete = ({ suggestions, inputLabel, placeholder }: AutoCompl
         getSuggestionsAsync();
       } else {
         const locallyFilteredSuggestions = getFilteredLocalSuggestions(suggestions, debouncedInputValue);
-        console.log('locallyFilteredSuggestions', locallyFilteredSuggestions)
+
         setFilteredSuggestions(locallyFilteredSuggestions);
       }
     };

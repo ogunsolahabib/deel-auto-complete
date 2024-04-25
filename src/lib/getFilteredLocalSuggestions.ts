@@ -9,7 +9,6 @@ export const getFilteredLocalSuggestions = (suggestions: Suggestion[], input: st
             "i"
         );
 
-        console.log(input, label, regex.test(label))
 
         // return suggestion if:
         // is input value
