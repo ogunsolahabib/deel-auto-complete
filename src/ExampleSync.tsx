@@ -25,7 +25,7 @@ const ExampleSync = () => {
     return (
         <>
             <h1>Autocomplete (sync)</h1>
-            <Autocomplete inputLabel="Github User Search" suggestions={suggestions} placeholder="Search by name..." />
+            <Autocomplete inputLabel="User Search" suggestions={suggestions} placeholder="Search by name..." />
         </>
     )
 }
