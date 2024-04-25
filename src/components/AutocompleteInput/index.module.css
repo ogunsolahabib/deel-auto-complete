@@ -1,6 +1,9 @@
 .input {
     width: 400px;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--stroke);
+    outline: var(--stroke);
+    height: 56px;
+    font-size: 20px;
     border-radius: 0.2rem;
   }
