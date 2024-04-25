@@ -1,0 +1,15 @@
+.label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.wrapper {
+  position: relative;
+}
+
+
+
+.error {
+  border: 1px solid red;
+  padding: 20px;
+}
