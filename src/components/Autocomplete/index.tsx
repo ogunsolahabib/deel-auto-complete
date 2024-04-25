@@ -5,7 +5,6 @@ import styles from "./index.module.css";
 import { useDebounce } from "../../custom-hooks/useDebounce";
 import AutocompleteInput from "../AutocompleteInput";
 import { getFilteredLocalSuggestions } from "../../lib/getFilteredLocalSuggestions";
-import AutocompleteLoading from "../AutocompleteLoading";
 
 
 interface AutoCompletePropsT {
@@ -165,13 +164,10 @@ export const Autocomplete = ({ suggestions, inputLabel, placeholder }: AutoCompl
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
         placeholder={placeholder}
+        isLoading={isLoading}
       />
 
-      {isLoading && (
-        <div className={styles.loadingSpinner}>
-          <AutocompleteLoading />
-        </div>
-      )}
+
 
       {Array.isArray(filteredSuggestions) && inputValue && inputValue.length > 0 &&
         suggestions?.length > 0 &&
@@ -182,6 +178,7 @@ export const Autocomplete = ({ suggestions, inputLabel, placeholder }: AutoCompl
             filteredSuggestions={filteredSuggestions}
             onSelect={handleSelect}
             inputValue={inputValue}
+
           />
         )}
 

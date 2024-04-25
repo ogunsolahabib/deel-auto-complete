@@ -7,14 +7,16 @@
   }
 }
 .loadingSpinner {
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #f3f3f3;
   border-top: 2px solid #383636;
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
   position: absolute;
-  right: 32px;
-  top: 37px;
+  right: 28px;
+  top: 20px;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
 }
 
